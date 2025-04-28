@@ -11,25 +11,24 @@
         <h1 class="flex justify-center px-12 pt-10 font-semibold text-slate-50 text-2xl">~~ Caesar Cipher ~~</h1>
     </div> 
     <div>
-    <form name="caesarForm" id="ceasarForm" class="grid grid-cols-3 grid-rows-4 gap-4 justify py-10 md:max-w-5xl mx-auto">
+    <form name="caesar-form" id="ceasar-form" class="p-5 m-5 grid lg:grid-cols-3 grid-rows-2 gap-4 sm:grid-cols-1 justify" >
         <div class="row-span-4 bg-white rounded-md p-5 shadow-xl h-72">
             <label for="input" class="text-lg font-semibold text-sky-950 p-5">Type here:</label><br>
-            <textarea id="input" class="bg-slate-50 m-5 p-5 grid grid-cols-1 grid-rows-2 justify resize-y rounded-md"oninput="applyCipher()"></textarea>
+            <textarea id="input" class="bg-slate-50 m-5 p-5 grid grid-cols-1 grid-rows-2 justify resize-y rounded-md" oninput="applyCipher()"></textarea>
         </div>
-        <div class="row-span-4 bg-slate-50 text-sky-950 rounded-md p-5 shadow-xl h-72">
-            <label for="encode"class="text-lg font-semibold text-sky-950 p-5">Encode:</label>
+        <div class="row-span-2 bg-slate-50 text-sky-950 rounded-md p-5 shadow-xl h-72">
+            <label for="encode"class="text-lg font-semibold text-sky-950 py-10 px-5">Encode:</label>
             <input type="radio" name="code" id="encode" checked onchange="applyCipher()" />
-            <br/>
-            <label for="decode" class="text-lg font-semibold text-sky-950 p-5">Decode:</label>
+            <label for="decode" class="text-lg font-semibold text-sky-950 py-10 px-5">Decode:</label>
             <input type="radio" name="code" id="decode" onchange="applyCipher()" /> 
             <br/><br/><br/>
-            <label for="userKey"class="text-lg font-semibold text-sky-950 p-5">Key:</label>
-            <input type="number" min="0" max="26" id="userKey" value="1" class="bg-white" onchange="applyCipher()" />
+            <label for="user-key"class="text-lg font-semibold text-sky-950 px-5 py-10">Key:</label>
+            <input type="number" min="0" max="26" id="user-key" value="1" class="bg-white" onchange="applyCipher()" />
             <br/> <br/>
         </div>
-        <div class="row-span-4 bg-white rounded-md p-5 shadow-xl h-72">
+        <div class="row-span-2 bg-white rounded-md p-5 shadow-xl h-72">
             <label for="output" class="text-lg font-semibold text-sky-950 p-5">Output:</label><br>
-            <textarea id="output" class="bg-slate-50 m-5 p-5 grid grid-cols-1 grid-rows-2 justify resize-y rounded-md"oninput="applyCipher()"></textarea>
+            <textarea id="output" class="bg-slate-50 m-5 p-5 grid grid-cols-1 grid-rows-2 justify resize-y rounded-md" oninput="applyCipher()"></textarea>
         </div>
 </form>
 </div>
